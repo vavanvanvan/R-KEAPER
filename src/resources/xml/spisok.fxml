@@ -1,0 +1,65 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" 
+		fx:controller="com.vavano.SpisokController" alignment="center" >
+		
+		<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+			
+	<style>
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 3;
+    -fx-border-insets: 5;
+    -fx-border-radius: 10;
+    -fx-border-color: blue;
+  	</style>
+	<GridPane alignment="center" hgap="10" vgap="10" >
+		
+			
+  	
+  	<Text text="Put your name and Age" 
+        GridPane.columnIndex="0" GridPane.rowIndex="0"
+        GridPane.columnSpan="2"/>
+ 
+    <Label text="spisokName"
+        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+ 
+    <TextField fx:id="spisokName"
+        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+ 
+    <Label fx:id="ageLabel" text="Age"
+        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        
+    <TextField fx:id="spisokAge"
+        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="3" alignment="BOTTOM_RIGHT">
+    	<children>
+    		<Button fx:id="btnConfirm"
+    			text="Confirm" onAction="#onClicked"/>
+    	</children>
+    </VBox>
+    
+         
+        
+	</GridPane>
+
+		<Label fx:id="worning" />
+  
+</VBox>
+
+
+
+
+
+
+
+
+

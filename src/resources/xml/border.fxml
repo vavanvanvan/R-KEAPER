@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com.fxml" fx:controller="com.vavano.BorderController">
+
+  <style>
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 3;
+    -fx-border-insets: 5;
+    -fx-border-radius: 10;
+    -fx-border-color: blue;
+  </style>
+
+	<top>
+		<VBox alignment="CENTER" spacing="10">
+			<Label fx:id="borderLabel" text="BorderPane">
+				<font>
+					<Font size="30"/>
+				</font>
+			</Label>
+			<Button fx:id="borderBtn" text="BUTTON" onAction="#borderButtonClick"/>
+		</VBox>
+	</top>
+	
+	<center>
+		<FlowPane fx:id="tableAdd">
+			<Label text="FlowPane"/>
+		</FlowPane>
+	</center>
+</BorderPane>

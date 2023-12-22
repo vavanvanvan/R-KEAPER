@@ -1,0 +1,35 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+	fx:controller="com.vavano.KeaperController">
+	
+	<padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+   <style>
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 3;
+    -fx-border-insets: 5;
+    -fx-border-radius: 10;
+    -fx-border-color: blue;
+   </style>
+    
+	<top>
+		<fx:include source="/resources/xml/spisok.fxml"/>
+	</top>
+	
+	<center>
+		<fx:include source="/resources/xml/main.fxml"/>
+	</center>
+	
+	<right>
+		<fx:include source="/resources/xml/border.fxml"/>
+	</right>
+	
+</BorderPane>

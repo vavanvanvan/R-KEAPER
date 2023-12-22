@@ -1,0 +1,56 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+	fx:controller="com.vavano.MainSceneController" alignment="center">
+	
+<padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+
+  <style>
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 3;
+    -fx-border-insets: 5;
+    -fx-border-radius: 10;
+    -fx-border-color: blue;
+  </style>
+  
+  <TilePane fx:id="tilpane" hgap="20" vgap="20">
+  	<Label fx:id="kuchnya" text="Kucnya" alignment="CENTER" prefWidth="70" prefHeight="90">
+  		<style>
+     		-fx-background-color: #00B5FF;
+     		-fx-background-radius: 10;
+    	</style>
+    </Label>
+    <Label fx:id="bar" text="Bar" alignment="CENTER" prefWidth="70" prefHeight="90">
+  		<style>
+     		-fx-background-color: #005FFA;
+     		-fx-background-radius: 10;
+    	</style>
+    </Label>
+  </TilePane>
+		
+	<children>
+		<Label fx:id="lb1" text="Hello Vavano"/>
+		<Label fx:id="lb2" text="This is Vavano App"/>
+		<Button fx:id="btnSpisok" text="Spisok" onAction="#btnClicked"/>
+		<Button fx:id="btn" text="Click UP" onAction="#btnClicked"/>
+		
+		
+		<!--<fx:include source="/resources/xml/Second.fxml"/>-->		
+	</children>
+	
+	<VBox  fx:id="scrollBox"  prefWidth="100" />
+		
+	
+
+</VBox>
+		
+
+

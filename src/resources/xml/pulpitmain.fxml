@@ -1,0 +1,41 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+	fx:controller="com.mainpulpit.MainPulpitController">
+
+	<padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+   <style>
+    -fx-padding: 10;
+    -fx-border-style: solid inside;
+    -fx-border-width: 3;
+    -fx-border-insets: 5;
+    -fx-border-radius: 10;
+    -fx-border-color: blue;
+   </style>
+   
+    <top>
+		<HBox alignment="CENTER">
+			<Label text="Top- Centr -HBox"/>
+		</HBox>
+	</top>
+	
+	<center>
+		<FlowPane alignment="CENTER">
+			<Label text="Center-FlowPane"/>
+		</FlowPane>
+	</center>
+	
+	<left>
+		<VBox alignment="CENTER">
+			<Label text="Left-VBox"/>
+		</VBox>
+	</left>
+	
+</BorderPane>
