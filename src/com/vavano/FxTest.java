@@ -32,7 +32,7 @@ public class FxTest extends Application{
 		Image image = new Image(icon);
 		stage.getIcons().add(image);
 		
-		stage.setTitle("TATANIKO");
+		stage.setTitle("TATANICHIKO");
 		stage.setWidth(1200);
 		stage.setHeight(900);	
 		
